@@ -418,6 +418,24 @@ main {
   border-top: 1px solid var(--line);
 }
 
+.card__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.card__actions svg {
+  margin-right: 4px;
+}
+
+/* Reminder already on */
+.btn--on {
+  background: var(--navy);
+}
+
+.btn--on:hover {
+  background: var(--navy-light);
+}
+
 /* Dialogs */
 dialog {
   width: min(440px, 100% - 32px);
@@ -506,6 +524,44 @@ dialog h2 {
 
 .error:empty {
   display: none;
+}
+
+.notice {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #e8f5ee;
+  color: #166534;
+  font-size: 14px;
+}
+
+.notice:empty {
+  display: none;
+}
+
+/* Text buttons inside the sign-in dialog */
+.link {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--orange);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link--right {
+  align-self: flex-end;
+  margin-top: -6px;
+  font-size: 14px;
+}
+
+.switch {
+  text-align: center;
+  font-size: 14px;
 }
 
 [hidden] {

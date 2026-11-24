@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Street race illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#223245"/>
+      <stop offset="1" stop-color="#17222e"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4a5c"/>
+      <stop offset="1" stop-color="#2b3949"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#sky)"/>
+  <circle cx="530" cy="95" r="70" fill="#e4572e" opacity="0.18"/>
+  <circle cx="530" cy="95" r="42" fill="#e4572e" opacity="0.35"/>
+  <path d="M0 215 L120 170 L210 200 L320 150 L430 195 L540 165 L640 200 L640 360 L0 360 Z" fill="#273749"/>
+  <path d="M290 205 L350 205 L600 360 L40 360 Z" fill="url(#road)"/>
+  <path d="M320 210 L320 232 M320 250 L320 280 M320 302 L320 360" stroke="#f7f6f3" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <g transform="translate(-30 0)" fill="none" stroke="#e4572e" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M448 178 L428 240"/>
+    <path d="M446 188 L472 208 L492 192"/>
+    <path d="M446 188 L420 202 L406 222"/>
+    <path d="M428 240 L458 266 L450 304"/>
+    <path d="M428 240 L404 270 L376 262"/>
+  </g>
+  <circle cx="426" cy="156" r="17" fill="#e4572e"/>
+</svg>

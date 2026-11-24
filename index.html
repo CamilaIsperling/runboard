@@ -51,16 +51,36 @@
     </main>
 
 
+    <!-- One dialog, three modes: sign in, create account and forgot password -->
     <dialog id="login-dialog">
       <button class="icon-btn close" type="button" data-close aria-label="Close">✕</button>
       <form id="login-form" class="stack">
-        <h2>Organizer access</h2>
-        <p class="muted">Organizers sign in to publish and manage their races.</p>
-        <label class="field">E-mail <input name="email" type="email" required /></label>
-        <label class="field">Password <input name="password" type="password" minlength="6" placeholder="At least 6 characters" required /></label>
+        <h2 id="login-title"></h2>
+        <p class="muted" id="login-subtitle"></p>
+        <label class="field">E-mail <input name="email" type="email" autocomplete="email" required /></label>
+        <label class="field" id="password-field">Password
+          <input name="password" type="password" minlength="6" placeholder="At least 6 characters" required />
+        </label>
+        <label class="field" id="confirm-field">Confirm password
+          <input name="confirm" type="password" minlength="6" autocomplete="new-password" required />
+        </label>
+        <button class="link link--right" type="button" id="forgot-link" data-mode="forgot">Forgot your password?</button>
         <p class="error" id="login-error"></p>
-        <button class="btn" value="signin">Sign in</button>
-        <button class="btn btn--ghost" value="signup">Create account</button>
+        <p class="notice" id="login-notice"></p>
+        <button class="btn" id="login-submit"></button>
+        <p class="muted switch" id="login-switch"></p>
+      </form>
+    </dialog>
+
+    <!-- Opened by the link of the "reset your password" e-mail -->
+    <dialog id="password-dialog">
+      <form id="password-form" class="stack">
+        <h2>Choose a new password</h2>
+        <p class="muted">Type your new password twice. You will stay signed in.</p>
+        <label class="field">New password <input name="password" type="password" minlength="6" autocomplete="new-password" required /></label>
+        <label class="field">Confirm new password <input name="confirm" type="password" minlength="6" autocomplete="new-password" required /></label>
+        <p class="error" id="password-error"></p>
+        <button class="btn">Save new password</button>
       </form>
     </dialog>
 

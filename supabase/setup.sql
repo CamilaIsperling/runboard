@@ -1,5 +1,5 @@
 -- =====================================================================
--- RunBoard - Grau A demo
+-- RunBoard - database setup (Grau A)
 -- Run this whole file ONCE in Supabase: SQL Editor > New query > Run
 -- It creates: the events table, the reminder subscriptions table,
 -- the API permissions, the access rules (Row Level Security) and the
